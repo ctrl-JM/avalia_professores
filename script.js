@@ -12,11 +12,28 @@ document.addEventListener("DOMContentLoaded", function () {
         "Professor C": { total: 0, count: 0, reviews: [] }
     };
 
+<<<<<<< HEAD
     const professorDetails = {
         "Professor A": { img: "style/assets/Alessandro-Carvalho-Sales.png", department: "Ciências Sociais" },
         "Professor B": { img: "style/assets/alessandraelfar.jpg", department: "Ciências Sociais" },
         "Professor C": { img: "style/assets/professorC.jpg", department: "Ciências Sociais" }
     };
+=======
+    // Função para atualizar a média de avaliações e as últimas avaliações
+    function updateProfessorInfo(professor) {
+        const avgRating = getAverageRating(professor);
+        const professorCard = document.getElementById(professor);
+        const ratingSpan = professorCard.querySelector('.rating');
+        const reviewsDiv = professorCard.querySelector('.reviews');
+
+        // Atualizar a média de avaliações
+        ratingSpan.innerText = avgRating;
+
+        // Exibir as últimas avaliações
+        const lastReviews = getLastReviews(professor);
+        reviewsDiv.innerHTML = lastReviews || "<p>Ainda não há avaliações.</p>";
+    }
+>>>>>>> dd20cd0 (segunda-versao)
 
     function getAverageRating(professor) {
         return ratingsData[professor].count > 0 
@@ -34,6 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
     searchForm.addEventListener("submit", function (event) {
         event.preventDefault();
         const professor = searchSelect.value;
+<<<<<<< HEAD
         const avgRating = getAverageRating(professor);
         const { img, department } = professorDetails[professor];
         const lastReviews = getLastReviews(professor);
@@ -48,6 +66,9 @@ document.addEventListener("DOMContentLoaded", function () {
                 ${lastReviews || "<p>Ainda não há avaliações.</p>"}
             </div>
         `;
+=======
+        updateProfessorInfo(professor);
+>>>>>>> dd20cd0 (segunda-versao)
     });
 
     // Event listener para o formulário de avaliação
@@ -73,6 +94,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // Limpar os campos do formulário
         form.reset();
 
+<<<<<<< HEAD
         // Atualizar as avaliações recentes
         displayRecentReviews();
     });
@@ -90,4 +112,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Exibir avaliações recentes ao carregar a página
     displayRecentReviews();
+=======
+        // Atualizar as avaliações no HTML
+        updateProfessorInfo(professor);
+    });
+
+    // Exibir as avaliações ao carregar a página
+    Object.keys(ratingsData).forEach(professor => {
+        updateProfessorInfo(professor);
+    });
+>>>>>>> dd20cd0 (segunda-versao)
 });

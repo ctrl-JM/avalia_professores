@@ -11,17 +11,18 @@
         <h1>Notas dos Professores</h1>
 
         <!-- Campo de busca de professor -->
-        <h2>Buscar Professor</h2>
+        <h2>Buscar docente</h2>
         <form id="searchForm">
-            <label for="searchProfessor">Selecione o Professor:</label>
-<<<<<<< HEAD
-            <select id="searchProfessor" aria-label="Selecionar o professor para busca">
-=======
+            <label for="searchProfessor">Selecione o(a) docente:</label>
             <select id="searchProfessor">
->>>>>>> dd20cd0 (segunda-versao)
                 <option value="Professor A">Alessandro Sales</option>
                 <option value="Professor B">Alessandra El Far</option>
                 <option value="Professor C">Lindomar Albuquerque</option>
+                <option value="Professor D">Lilian Sales</option>
+                <option value="Professor E">Uirá Garcia</option>
+                <option value="Professor F">Melvina</option>
+                <option value="Professor G">Maria Cristina Pompa</option>
+                <option value="Professor H">Ana Lúcia</option>
             </select>
             <button type="submit">Procurar</button>
         </form>
@@ -33,40 +34,30 @@
         <h2>Enviar Avaliação</h2>
         <form id="reviewForm">
             <label for="professor">Nome do Professor:</label>
-<<<<<<< HEAD
-            <select id="professor" name="professor" required aria-label="Escolha o professor">
-=======
             <select id="professor" required>
->>>>>>> dd20cd0 (segunda-versao)
                 <option value="Professor A">Alessandro Sales</option>
                 <option value="Professor B">Alessandra El Far</option>
                 <option value="Professor C">Lindomar Albuquerque</option>
+                <option value="Professor D">Lilian Sales</option>
+                <option value="Professor E">Uirá Garcia</option>
+                <option value="Professor F">Melvina</option>
+                <option value="Professor G">Maria Cristina Pompa</option>
+                <option value="Professor H">Ana Lúcia</option>
             </select>
 
             <label for="rating">Nota (1 a 5):</label>
-<<<<<<< HEAD
-            <input type="number" id="rating" name="rating" min="1" max="5" required aria-label="Nota do professor de 1 a 5">
-
-            <label for="comment">Comentário:</label>
-            <textarea id="comment" name="comment" required aria-label="Deixe seu comentário sobre o professor"></textarea>
-=======
             <input type="number" id="rating" min="1" max="5" required>
 
             <label for="comment">Comentário:</label>
             <textarea id="comment" required></textarea>
->>>>>>> dd20cd0 (segunda-versao)
 
             <button type="submit">Enviar Avaliação</button>
         </form>
 
         <h2>Avaliações Recentes</h2>
         <div id="reviews"></div>
-<<<<<<< HEAD
-    </div>
 
-=======
-
-        <!-- Informações dos professores -->
+        <!-- Informações dos professores (cards) -->
         <div class="professor-card" id="Professor A">
             <img src="style/assets/Alessandro-Carvalho-Sales.png" alt="Professor A">
             <h3>Alessandro Sales</h3>
@@ -93,8 +84,53 @@
             <h4>Últimas Avaliações:</h4>
             <div class="reviews"></div>
         </div>
+
+        <div class="professor-card" id="Professor D">
+            <img src="style/assets/professorD.jpg" alt="Professor D">
+            <h3>Lilian Sales</h3>
+            <p>Departamento: Ciências Sociais</p>
+            <p class="avg-rating">Média Atual: <span class="rating">N/A</span></p>
+            <h4>Últimas Avaliações:</h4>
+            <div class="reviews"></div>
+        </div>
+
+        <div class="professor-card" id="Professor E">
+            <img src="style/assets/professorE.jpg" alt="Professor E">
+            <h3>Uirá Garcia</h3>
+            <p>Departamento: Ciências Sociais</p>
+            <p class="avg-rating">Média Atual: <span class="rating">N/A</span></p>
+            <h4>Últimas Avaliações:</h4>
+            <div class="reviews"></div>
+        </div>
+
+        <div class="professor-card" id="Professor F">
+            <img src="style/assets/professorF.jpg" alt="Professor F">
+            <h3>Melvina</h3>
+            <p>Departamento: Ciências Sociais</p>
+            <p class="avg-rating">Média Atual: <span class="rating">N/A</span></p>
+            <h4>Últimas Avaliações:</h4>
+            <div class="reviews"></div>
+        </div>
+
+        <div class="professor-card" id="Professor G">
+            <img src="style/assets/professorG.jpg" alt="Professor G">
+            <h3>Maria Cristina Pompa</h3>
+            <p>Departamento: Ciências Sociais</p>
+            <p class="avg-rating">Média Atual: <span class="rating">N/A</span></p>
+            <h4>Últimas Avaliações:</h4>
+            <div class="reviews"></div>
+        </div>
+
+        <div class="professor-card" id="Professor H">
+            <img src="style/assets/professorH.jpg" alt="Professor H">
+            <h3>Ana Lúcia</h3>
+            <p>Departamento: Ciências Sociais</p>
+            <p class="avg-rating">Média Atual: <span class="rating">N/A</span></p>
+            <h4>Últimas Avaliações:</h4>
+            <div class="reviews"></div>
+        </div>
+
     </div>
->>>>>>> dd20cd0 (segunda-versao)
     <script src="script.js"></script>
 </body>
 </html>

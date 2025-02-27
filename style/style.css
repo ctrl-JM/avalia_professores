@@ -19,11 +19,7 @@ body {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-<<<<<<< HEAD
-.imagens-professor {
-=======
 .professor-card img {
->>>>>>> dd20cd0 (segunda-versao)
     width: 20%;
 }
 
